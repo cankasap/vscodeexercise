@@ -1,8 +1,6 @@
-import math
-from os import rename
-import sys
-
 import requests
 
-name = input("adsad ?")
-print(name)
+r = requests.get("http://www.cyclonemfg.com/")
+
+print(r.status_code)
+print(r.ok)
